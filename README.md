@@ -84,22 +84,22 @@ Enum types
     - CLOSED
 
 ### Folder structure
-  hoop_dreams/
-    **schema/**
-      input/
+	hoop_dreams/
+		schemas/
+			input/
       mutations/
       queries/
       scalar/
       types/
       enums/
       index.js
-    **resolvers/**
+		resolvers/
       basketballFieldResolver.js
       pickupGameResolver.js
       playerResolver.js
       index.js
-    **data/**
+    data/
       db.js
-    **services/**
+    services/
       basketballFieldService.js
       index.js
