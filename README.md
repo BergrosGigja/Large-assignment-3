@@ -87,19 +87,19 @@ Enum types
 	hoop_dreams/
 		schemas/
 			input/
-      mutations/
-      queries/
-      scalar/
-      types/
-      enums/
-      index.js
+			mutations/
+			queries/
+			scalar/
+			types/
+			enums/
+			index.js
 		resolvers/
-      basketballFieldResolver.js
-      pickupGameResolver.js
-      playerResolver.js
-      index.js
-    data/
-      db.js
-    services/
-      basketballFieldService.js
-      index.js
+			basketballFieldResolver.js
+			pickupGameResolver.js
+			playerResolver.js
+			index.js
+		data/
+			db.js
+		services/
+			basketballFieldService.js
+			index.js
