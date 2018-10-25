@@ -1,9 +1,15 @@
-const ApolloServer = require('apollo-server');
+const enums = require('./enums');
+const input = require('./input');
+const mutations = require('./mutations');
+const queries = require('./queries');
+const scalar = require('./scalar');
+const types = require('./types');
 
-const server = new ApolloServer ({
-    //typedefs
-    //resolvers
-});
-
-server.listen()
-    .then (({ url }) => console.log('GraphQL API running on ${url}'))
+module.exports = `
+  ${enums}
+  ${input}
+  ${mutations}
+  ${queries}
+  ${scalar}
+  ${types}
+`;
