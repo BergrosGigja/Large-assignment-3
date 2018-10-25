@@ -1,7 +1,7 @@
 module.exports = `
     input BasketballFieldInput {
         name: String!
-        capacity: int!
+        capacity: Int!
         yearOfCreation: Moment!
         status: BasketballFieldStatus!
     }

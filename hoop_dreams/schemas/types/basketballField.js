@@ -1,10 +1,10 @@
 module.exports = `
   type BasketballField {
     id: ID!
-    name: string!
-    capacity: int!
+    name: String!
+    capacity: Int!
     yearOfCreation: Moment!
-    pickupGames: [pickupGame!]!
+    pickupGames: [PickupGame!]!
     status: BasketballFieldStatus!
   }
 `;

@@ -1,7 +1,7 @@
 const basketballFieldInput = require('./basketballFieldInput');
-const pickupGameInput = require('./PickupGameInput');
-const playerInput = require('./PlayerInput');
-const signupPlayerInput = require('./SignupPlayerInput');
+const pickupGameInput = require('./pickupGameInput');
+const playerInput = require('./playerInput');
+const signupPlayerInput = require('./signupPlayerInput');
 
 module.exports = `
     ${basketballFieldInput}
