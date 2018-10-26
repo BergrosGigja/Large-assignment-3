@@ -1,10 +1,11 @@
 {
-  "name": "Large-assignment-3",
+  "name": "hoop_dreams",
   "version": "1.0.0",
   "description": "A group of enthusiastic basketball fans regularly play basketball with each other. After years of always having to call everyone to play a basketball game of pickup they are beginning to find this method rather annoying. This group has come to us and want us to create a GraphQL API which can deliver data to make it easier to find and collect players to a basketball pickup game. This is where we come in! Because of our exceptional GraphQL skills and attention to detail we are the right ones for the job!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node ./data/seeds.js"
   },
   "repository": {
     "type": "git",
