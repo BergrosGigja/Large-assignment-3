@@ -3,10 +3,10 @@ const { Player } = require('../data/db');
 module.exports = {
     queries: {
         allPlayers: () => {
-            Player.find({}, (err, players) => {});
+            return Player.find();
         },
-        player: () => {
-            return null;
+        player: (parent, args) => {
+            return Player.findById(args.id);
         }
     }
 }

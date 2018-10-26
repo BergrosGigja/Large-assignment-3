@@ -1,10 +1,12 @@
+const { PickupGame } = require('../data/db');
+
 module.exports = {
     queries: {
         allPickupGames: () => {
-            return null;
+            return PickupGame.find();
         },
-        pickupGame: () => {
-            return null;
+        pickupGame: (parent, args) => {
+            return PickupGame.findById(args.id);
         }
     }
 }
