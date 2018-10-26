@@ -3,6 +3,6 @@ module.exports = `
         start: Moment!
         end: Moment!
         basketballFieldId: Int!
-        hostId: Int!
+        hostId: String!
     }
 `;

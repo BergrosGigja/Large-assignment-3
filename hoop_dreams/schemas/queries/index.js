@@ -3,8 +3,8 @@ module.exports = `
     allBasketballFields(status: BasketballFieldStatus!): [BasketballField!]!
     allPickupGames: [PickupGame!]!
     allPlayers: [Player!]!
-    basketballField(id: ID!): BasketballField!
-    pickupGame(id: ID!): PickupGame!
+    basketballField(id: String!): BasketballField!
+    pickupGame(id: String!): PickupGame!
     player(id: ID!): Player!
   }
 `;
