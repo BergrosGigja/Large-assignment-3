@@ -8,6 +8,10 @@ module.exports = {
         ...pickupGameResolver.queries,
         ...basketballFieldResolver.queries
     },
+    Mutation: {
+        ...playerResolver.mutations,
+        ...pickupGameResolver.mutations
+    },
     ...playerResolver.types,
     ...pickupGameResolver.types,
     ...basketballFieldResolver.types
