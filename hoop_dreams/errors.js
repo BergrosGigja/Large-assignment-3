@@ -46,11 +46,20 @@ class BadRequest extends Error {
     }
 }
 
+class ServerError extends Error {
+    constructor(message = 'Internal server error') {
+        super(message);
+        this.name = 'ServerError';
+        this.code = 500;
+    }
+}
+
 module.exports = {
     PickupGameExceedMaximumError,
     BasketballFieldClosedError,
     PickupGameOverlapError,
     PickupGameAlreadyPassedError,
     NotFoundError,
-    BadRequest
+    BadRequest,
+    ServerError
 };
