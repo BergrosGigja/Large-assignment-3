@@ -2,8 +2,9 @@ const { BasketballField } = require('../data/db');
 
 module.exports = {
     queries: {
-        allBasketballFields: (parent, args) => {
+        allBasketballFields: (parent, args, context) => {
             const { status } = args;
+            const {basketballFieldService} = context;
             //TODO: fix so it only shows those with requested status
             return BasketballField.find();
         },
@@ -11,4 +12,5 @@ module.exports = {
             return BasketballField.findById(args.id);
         }
     }
+    
 }
