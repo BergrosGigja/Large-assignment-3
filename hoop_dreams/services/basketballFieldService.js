@@ -8,14 +8,10 @@ const basketballFieldService = () => {
     const getBasketballFieldById = id => {
         return axios.get(`${url}/basketball-fields/${id}`)
     };    
-    const addBasketballField = field => {
-        return axios.post(`${url}/basketball-fields/`)
-    };
 
     return {
         getAllBasketballFields,
         getBasketballFieldById,
-        addBasketballField
     };
 }
 

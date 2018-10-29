@@ -22,7 +22,7 @@ module.exports = {
             }              
         }),
 
-        basketballFieldById: (parent, args, { service } ) => new Promise((resolve, reject) => {
+        basketballField: (parent, args, { service } ) => new Promise((resolve, reject) => {
             const { id } = args;
 
             if (id != "") {
@@ -33,10 +33,7 @@ module.exports = {
                 reject( new NotFoundError );
             }  
         }),
-        // addBasketballField: (parent, args, { service } ) => new Promise((resolve, reject) => {
-
-        // })
-    }
+        }
 
 }
 
