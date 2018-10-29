@@ -9,7 +9,7 @@ const server = new ApolloServer({
     resolvers,
     context: {
         db: database,
-        services: basketballFieldService
+        service: basketballFieldService
     }
 });
 

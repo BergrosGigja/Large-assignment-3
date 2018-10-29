@@ -2,15 +2,24 @@ const { BasketballField } = require('../data/db');
 
 module.exports = {
     queries: {
-        allBasketballFields: (parent, args, context) => {
+        allBasketballFields: (parent, args,  { service } ) => new Promise((resolve, reject) => {
+            //Only show basketball fields with requested status
             const { status } = args;
-            const {basketballFieldService} = context;
-            //TODO: fix so it only shows those with requested status
-            return BasketballField.find();
-        },
+            if(status) { 
+                service.getAllBasketballFields().then((allBasketballFields) => {
+                    resolve(allBasketballFields.data.filter(b => b.status === status));
+                })
+            } else {
+                const reason = new Error('No basketball field for you  my friend');
+                reject(reason);
+            }
+                
+        }),
+
         basketballField: (parent, args) => {
             return BasketballField.findById(args.id);
         }
     }
-    
+
 }
+

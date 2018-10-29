@@ -1,5 +1,5 @@
-var request = require('request');
-let url = "https://basketball-fields.herokuapp.com/api";
+const url = "https://basketball-fields.herokuapp.com/api";
+const axios = require('axios');
 
 const basketballFieldService = () => {
     function getAllBasketballFields() {
