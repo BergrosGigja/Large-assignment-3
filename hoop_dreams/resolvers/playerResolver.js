@@ -1,5 +1,3 @@
-const { Player } = require('../data/db');
-
 module.exports = {
     queries: {
         allPlayers: () => {
@@ -15,12 +13,7 @@ module.exports = {
 
             var newPlayer = new Player();
             newPlayer.name = name;
-            Player.create(newPlayer);
-            return newPlayer;
 
-        },
-        updatePlayer: (parent, args) => {
-            const {name} = args.name;
 
             const player = Player.findOneAndUpdate(
                 {"_id" : args.id },
