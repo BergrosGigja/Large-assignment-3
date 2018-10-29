@@ -2,11 +2,20 @@ const url = "https://basketball-fields.herokuapp.com/api";
 const axios = require('axios');
 
 const basketballFieldService = () => {
-    function getAllBasketballFields() {
+    const getAllBasketballFields = () => {
         return axios.get(`${url}/basketball-fields`);
-      }
+    };   
+    const getBasketballFieldById = id => {
+        return axios.get(`${url}/basketball-fields/${id}`)
+    };    
+    const addBasketballField = field => {
+        return axios.post(`${url}/basketball-fields/`)
+    };
+
     return {
-        getAllBasketballFields
+        getAllBasketballFields,
+        getBasketballFieldById,
+        addBasketballField
     };
 }
 
